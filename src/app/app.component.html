@@ -1,0 +1,30 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<div class="toolbar" >
+  <span> ||  Trabajo Práctico de Angular  ||</span>
+</div>
+
+<div class="content">
+<div>
+  <button mat-fab extended (click)="showHiddenList()">{{ showList ? 'Ocultar Lista' : 'Mostrar Lista' }}</button>
+</div>
+
+<div *ngIf="showList">
+  <h1>Lista de Items</h1>
+<table>
+  <thead>
+    <tr>
+      <th> Nombre</th>
+      <th> Costo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <td>{{ item.nombre }} </td>
+      <td>{{ item.costo | currency }}</td> 
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
