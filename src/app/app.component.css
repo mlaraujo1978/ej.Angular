@@ -1,24 +1,22 @@
 
-  .toolbar {
+  .header{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f0b2e9;
+    padding-top: 15px;
     color: rgb(33, 30, 30);
-    font-weight: 600;
     font-size: large;
-  }
-  span{
-    padding: 15px;
-    font-size: larger;
+    font-weight: bold;    
   }
 
-  h1{
+  h2{
     margin-top: 15px;
     text-align: center;
     font-size: x-large;
     text-decoration: underline;
     font-weight: bold;
+    color: rgb(65, 63, 63);
   }
 
   .content {
@@ -44,7 +42,7 @@
   }
 
   table{
-    background-color: rgb(31, 30, 30);
+    background-color: rgb(65, 63, 63);
     color: #f0b2e9;
     border-radius: 5px;
     border: 3px solid;
